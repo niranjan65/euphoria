@@ -3,14 +3,17 @@ import logo from '../images/euphoria.png'
 import { FaRegHeart } from "react-icons/fa";
 import { LuUser2 } from "react-icons/lu";
 import { CiShoppingCart } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className='h-[108px] w-screen  p-[31px]'>
         <div className='w-[1237px] h-[45px] mx-auto flex justify-between items-center '>
-            <div>
-            <img src={logo} alt="" />
-            </div>
+            
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
+           
 
             <div className="nav-items flex gap-10">
                 <p className='font-bold'>Shop</p>
@@ -31,9 +34,9 @@ const Navbar = () => {
                 <div className='h-[44px] w-[44px] bg-[#F6F6F6] p-3 rounded-[8px] flex items-center justify-center'>
                     <LuUser2 />
                 </div>
-                <div className='h-[44px] w-[44px] bg-[#F6F6F6] p-3 rounded-[8px] flex items-center justify-center'>
+                <Link to="/cart" className='h-[44px] w-[44px] bg-[#F6F6F6] p-3 rounded-[8px] flex items-center justify-center'>
                     <CiShoppingCart />
-                </div>
+                </Link >
             </div>
         </div>
     </div>
