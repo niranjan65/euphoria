@@ -17,10 +17,18 @@ const Navbar = () => {
 
             <div className="nav-items flex gap-10">
                 <p className='font-bold'>Shop</p>
+                <Link to="/productlist">
                 <p>Men</p>
+                </Link>
+                <Link to="/productlist">
                 <p>Women</p>
+                </Link>
+                <Link to="/productlist">
                 <p>Combos</p>
+                </Link>
+                <Link to="/productlist">
                 <p>Joggers</p>
+                </Link>
             </div>
 
             <div className="searchbar">
@@ -32,7 +40,10 @@ const Navbar = () => {
                     <FaRegHeart />
                 </div>
                 <div className='h-[44px] w-[44px] bg-[#F6F6F6] p-3 rounded-[8px] flex items-center justify-center'>
-                    <LuUser2 />
+                    
+                    <Link to="/contact-details">
+                        <LuUser2 />
+                    </Link>
                 </div>
                 <Link to="/cart" className='h-[44px] w-[44px] bg-[#F6F6F6] p-3 rounded-[8px] flex items-center justify-center'>
                     <CiShoppingCart />

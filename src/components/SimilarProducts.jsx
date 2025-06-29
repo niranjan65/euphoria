@@ -18,19 +18,18 @@ const SimilarProducts = () => {
     { id: 2, image: Similar2, name: "line Pattern Black H...", brand: "AS's Brand", price: "$123.00" },
     { id: 3, image: fem3, name: "Black Shorts", brand: "MM's Brand", price: "$37.00" },
     { id: 4, image: fem4, name: "Levender Hoodie with", brand: "Nike's Brand", price: "$119.00" },
-    { id: 5, image: fem1, name: "Black Sweatshirt with ....", brand: "Jhanvi's Brand", price: "$123.00" },
-    { id: 6, image: Similar1, name: "Black Sweatshirt with ....", brand: "Jhanvi's Brand", price: "$123.00" },
-    { id: 7, image: Similar2, name: "line Pattern Black H...", brand: "AS's Brand", price: "$123.00" },
-    { id: 8, image: fem3, name: "Black Shorts", brand: "MM's Brand", price: "$37.00" },
-    { id: 9, image: fem4, name: "Levender Hoodie with", brand: "Nike's Brand", price: "$119.00" },
-    { id: 10, image: fem1, name: "Black Sweatshirt with ....", brand: "Jhanvi's Brand", price: "$123.00" }
+    { id: 5, image: Similar4, name: "Black Sweatshirt with ....", brand: "Jhanvi's Brand", price: "$123.00" },
+    { id: 6, image: Similar5, name: "Black Sweatshirt with ....", brand: "Jhanvi's Brand", price: "$123.00" },
+    { id: 7, image: Similar6, name: "line Pattern Black H...", brand: "AS's Brand", price: "$123.00" },
+    { id: 8, image: Similar7, name: "Black Shorts", brand: "MM's Brand", price: "$37.00" },
+   
   ];
 
   return (
     <div className="container mx-auto px-4 py-16">
             <div className="flex items-center mb-8">
               <div className="w-1.5 h-8 rounded-full bg-purple-600 mr-4"></div>
-              <h3 className="text-3xl font-semibold text-gray-800">In The Limelight</h3>
+              <h3 className="text-3xl font-semibold text-gray-800">Similar Products</h3>
             </div>
     
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Trash2, Minus, Plus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ShoppingCart() {
   const [cartItems, setCartItems] = useState([
@@ -57,7 +58,7 @@ export default function ShoppingCart() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         {/* Breadcrumb */}
         <div className="mb-6 text-sm text-gray-500">
           <span>Home</span>
@@ -189,9 +190,12 @@ export default function ShoppingCart() {
                 </div>
               </div>
             </div>
-            <button className="w-full mt-6 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium">
+            {/* /cart/checkout */}
+            <Link to="/cart/checkout">
+              <button className="w-full mt-6 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium">
               Proceed To Checkout
             </button>
+            </Link>
           </div>
         </div>
       </div>

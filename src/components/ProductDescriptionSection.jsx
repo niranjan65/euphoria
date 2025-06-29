@@ -21,7 +21,7 @@ export default function ProductDescriptionSection() {
   ];
 
   return (
-    <section className="max-w-screen mx-24 px-4 py-8">
+    <section className="container mx-auto px-4 py-8">
       {/* Header */}
       <div className="flex items-center mb-8">
         <div className="w-1 h-8 bg-purple-600 mr-4"></div>

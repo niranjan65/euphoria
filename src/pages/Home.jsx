@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Banner Cards */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img src={banner1} alt="Low Price Banner" className="w-full h-80 object-cover" />
             <div className="absolute inset-0 p-8 text-white flex flex-col justify-center">
